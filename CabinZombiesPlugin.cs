@@ -4,20 +4,20 @@ using CounterStrikeSharp.API.Core.Attributes;
 using CounterStrikeSharp.API.Core.Attributes.Registration;
 using CounterStrikeSharp.API.Modules.Utils;
 
-namespace TemplatePlugin;
+namespace CabinZombiesPlugin;
 
 [MinimumApiVersion(150)]
-public class TemplatePlugin : BasePlugin
+public class CabinZombiesPlugin : BasePlugin
 {
     private const string Version = "1.0.0";
     
-    public override string ModuleName => "{PLUGIN_NAME} Plugin";
+    public override string ModuleName => "Cabin Zombies Plugin";
     public override string ModuleVersion => Version;
-    public override string ModuleAuthor => "{PLUGIN_AUTHOR}";
-    public override string ModuleDescription => "{PLUGIN_DESCRIPTION}";
+    public override string ModuleAuthor => "Moooniz";
+    public override string ModuleDescription => "A simple cabin defense zombies mode for CS2";
     
-    public static readonly string LogPrefix = $"[PLUGIN_NAME {Version}] ";
-    public static readonly string MessagePrefix = $"[{ChatColors.Green}PLUGIN_NAME{ChatColors.White}] ";
+    public static readonly string LogPrefix = $"[Cabin Zombies {Version}] ";
+    public static readonly string MessagePrefix = $"[{ChatColors.Green}Cabin Zombies{ChatColors.White}] ";
     
     [GameEventHandler]
     public HookResult OnRoundStart(EventRoundStart @event, GameEventInfo info)
